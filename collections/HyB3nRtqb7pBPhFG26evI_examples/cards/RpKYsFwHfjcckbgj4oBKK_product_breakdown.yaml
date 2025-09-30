@@ -1,0 +1,195 @@
+description: Orders for each product, grouped by product category
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+result_metadata:
+- description: The name of the product as it should be displayed to customers.
+  semantic_type: type/Title
+  coercion_strategy: null
+  name: TITLE
+  settings:
+    link_url: ''
+    view_as: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PRODUCTS
+    - TITLE
+  - base-type: type/Text
+    source-field:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    - PRODUCT_ID
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  - TITLE
+  visibility_type: normal
+  display_name: Product → Title
+  base_type: type/Text
+- description: 'The type of product, valid values include: Doohicky, Gadget, Gizmo and Widget'
+  semantic_type: type/Category
+  coercion_strategy: null
+  name: CATEGORY
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PRODUCTS
+    - CATEGORY
+  - base-type: type/Text
+    source-field:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    - PRODUCT_ID
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  - CATEGORY
+  visibility_type: normal
+  display_name: Product → Category
+  base_type: type/Text
+- base_type: type/BigInteger
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - count
+  - base-type: type/Integer
+  name: count
+  semantic_type: type/Quantity
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+query_type: query
+name: Product breakdown
+document_id: null
+type: question
+creator_id: internal@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  query:
+    filter:
+    - '>='
+    - - field
+      - count
+      - base-type: type/Integer
+    - 105
+    source-query:
+      breakout:
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PRODUCTS
+          - TITLE
+        - base-type: type/Text
+          source-field:
+          - Sample Database
+          - PUBLIC
+          - ORDERS
+          - PRODUCT_ID
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PRODUCTS
+          - CATEGORY
+        - base-type: type/Text
+          source-field:
+          - Sample Database
+          - PUBLIC
+          - ORDERS
+          - PRODUCT_ID
+      aggregation:
+      - - count
+      source-table:
+      - Sample Database
+      - PUBLIC
+      - ORDERS
+  type: query
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: RpKYsFwHfjcckbgj4oBKK
+  label: product_breakdown
+display: pie
+archived_directly: false
+entity_id: RpKYsFwHfjcckbgj4oBKK
+collection_preview: true
+visualization_settings:
+  graph.y_axis.title_text: ''
+  graph.show_values: true
+  pie.slice_threshold: 11
+  pie.percent_visibility: legend
+  pie.dimension:
+  - CATEGORY
+  - TITLE
+  - count
+  graph.series_order_dimension: null
+  graph.x_axis.title_text: ''
+  pie.sort_rows: false
+  pie.rows:
+  - color: '#51528D'
+    defaultColor: false
+    enabled: true
+    hidden: false
+    isOther: false
+    key: Doohickey
+    name: Doohickey
+    originalName: Doohickey
+  - color: '#8A5EB0'
+    defaultColor: false
+    enabled: true
+    hidden: false
+    isOther: false
+    key: Gadget
+    name: Gadget
+    originalName: Gadget
+  - color: '#69C8C8'
+    defaultColor: false
+    enabled: true
+    hidden: false
+    isOther: false
+    key: Gizmo
+    name: Gizmo
+    originalName: Gizmo
+  - color: '#227FD2'
+    defaultColor: false
+    enabled: true
+    hidden: false
+    isOther: false
+    key: Widget
+    name: Widget
+    originalName: Widget
+  graph.metrics:
+  - count
+  graph.series_order: null
+  pie.decimal_places: 2
+  column_settings: null
+  series_settings:
+    count:
+      color: '#999AC4'
+  graph.dimensions:
+  - TITLE
+  stackable.stack_type: null
+metabase_version: null
+parameters: []
+dashboard_id: null
+created_at: '2025-04-09T18:49:25.331567+02:00'
+public_uuid: null

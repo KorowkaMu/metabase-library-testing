@@ -1,0 +1,1444 @@
+description: Overview of sample data and hypothetical sales
+archived: false
+collection_position: 2
+dashcards:
+- size_x: 12
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - N-o1tJ9swdO4YJycqMA8P
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  - model: DashboardCard
+    id: OO4kGtX3HOooGeROYUZJe
+  card_id: S-hEu1jZ2-822qvBQ1EiT
+  entity_id: OO4kGtX3HOooGeROYUZJe
+  visualization_settings:
+    click_behavior:
+      parameterMapping:
+        9d9cddd4:
+          id: 9d9cddd4
+          source:
+            id: CATEGORY
+            name: Product → Category
+            type: column
+          target:
+            id: 9d9cddd4
+            type: parameter
+      type: crossfilter
+    column_settings: null
+  size_y: 8
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 10
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - UaPZl7PULaGoAGquao9XS
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings:
+  - card_id: kgAiQ87dLKJmTnOaTeVsc
+    parameter_id: 1ebab259
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - VENDOR
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  - card_id: kgAiQ87dLKJmTnOaTeVsc
+    parameter_id: 81cd957
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - stage-number: 0
+  - card_id: kgAiQ87dLKJmTnOaTeVsc
+    parameter_id: 9d9cddd4
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  - card_id: kgAiQ87dLKJmTnOaTeVsc
+    parameter_id: efd919c7
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: quarter
+    - stage-number: 0
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: UaPZl7PULaGoAGquao9XS
+  - model: DashboardCard
+    id: AmK0nHFFIARIPCWx7RHj8
+  card_id: kgAiQ87dLKJmTnOaTeVsc
+  entity_id: AmK0nHFFIARIPCWx7RHj8
+  visualization_settings:
+    column_settings: null
+  size_y: 7
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 19
+- size_x: 10
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - N-o1tJ9swdO4YJycqMA8P
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  - model: DashboardCard
+    id: YIP_KpvNnw0g7igNvwMVp
+  card_id: fKu0z-vEC1WwVv1Lu95jD
+  entity_id: YIP_KpvNnw0g7igNvwMVp
+  visualization_settings:
+    column_settings: null
+  size_y: 7
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 26
+- size_x: 12
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - N-o1tJ9swdO4YJycqMA8P
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 12
+  parameter_mappings:
+  - card_id: jjO5LcBp8qNILJFiYZoVt
+    parameter_id: 9d9cddd4
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  - model: DashboardCard
+    id: gi60ETDzDM8MxIUN9Nt-7
+  card_id: jjO5LcBp8qNILJFiYZoVt
+  entity_id: gi60ETDzDM8MxIUN9Nt-7
+  visualization_settings:
+    column_settings: null
+  size_y: 8
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 10
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - N-o1tJ9swdO4YJycqMA8P
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  - model: DashboardCard
+    id: 4bnIg0l06MqSikGg2jPM1
+  card_id: byM0vLfOiM1zBI_t1MUcO
+  entity_id: 4bnIg0l06MqSikGg2jPM1
+  visualization_settings:
+    column_settings: null
+  size_y: 6
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 18
+- size_x: 17
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - UaPZl7PULaGoAGquao9XS
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings:
+  - card_id: VFCGVYPVtLzCtt4teeoW4
+    parameter_id: 1ebab259
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - VENDOR
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  - card_id: VFCGVYPVtLzCtt4teeoW4
+    parameter_id: 81cd957
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: quarter
+    - stage-number: 0
+  - card_id: VFCGVYPVtLzCtt4teeoW4
+    parameter_id: 9d9cddd4
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  - card_id: VFCGVYPVtLzCtt4teeoW4
+    parameter_id: efd919c7
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: quarter
+    - stage-number: 0
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: UaPZl7PULaGoAGquao9XS
+  - model: DashboardCard
+    id: mM0yHMzeaWUi0uJkT1puj
+  card_id: VFCGVYPVtLzCtt4teeoW4
+  entity_id: mM0yHMzeaWUi0uJkT1puj
+  visualization_settings:
+    column_settings: null
+  size_y: 8
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 2
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - UaPZl7PULaGoAGquao9XS
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: UaPZl7PULaGoAGquao9XS
+  - model: DashboardCard
+    id: 8_qdLmnHn3tGOaDdbLTwn
+  card_id: null
+  entity_id: 8_qdLmnHn3tGOaDdbLTwn
+  visualization_settings:
+    dashcard.background: false
+    text: Overall Business Health
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: heading
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 0
+- size_x: 7
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - UaPZl7PULaGoAGquao9XS
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 17
+  parameter_mappings:
+  - card_id: D4o8cCTOY-SnxoYDRVWcO
+    parameter_id: 1ebab259
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - VENDOR
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  - card_id: D4o8cCTOY-SnxoYDRVWcO
+    parameter_id: 81cd957
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - stage-number: 0
+  - card_id: D4o8cCTOY-SnxoYDRVWcO
+    parameter_id: 9d9cddd4
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  - card_id: D4o8cCTOY-SnxoYDRVWcO
+    parameter_id: efd919c7
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: quarter
+    - stage-number: 0
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: UaPZl7PULaGoAGquao9XS
+  - model: DashboardCard
+    id: _VxmRsylZKkpe0H-lGwyT
+  card_id: D4o8cCTOY-SnxoYDRVWcO
+  entity_id: _VxmRsylZKkpe0H-lGwyT
+  visualization_settings:
+    column_settings: null
+  size_y: 4
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 2
+- size_x: 7
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - UaPZl7PULaGoAGquao9XS
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 17
+  parameter_mappings:
+  - card_id: Ey2qt4I-wcg1E0846iUQS
+    parameter_id: 1ebab259
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - VENDOR
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  - card_id: Ey2qt4I-wcg1E0846iUQS
+    parameter_id: 81cd957
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - stage-number: 0
+  - card_id: Ey2qt4I-wcg1E0846iUQS
+    parameter_id: 9d9cddd4
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: UaPZl7PULaGoAGquao9XS
+  - model: DashboardCard
+    id: vPyErYUpYMjucZa7z4smS
+  card_id: Ey2qt4I-wcg1E0846iUQS
+  entity_id: vPyErYUpYMjucZa7z4smS
+  visualization_settings:
+    column_settings: null
+  size_y: 4
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 6
+- size_x: 12
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - UaPZl7PULaGoAGquao9XS
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 12
+  parameter_mappings:
+  - card_id: -6yAP_G1UZ7xZc4E65Tvy
+    parameter_id: 1ebab259
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - VENDOR
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  - card_id: -6yAP_G1UZ7xZc4E65Tvy
+    parameter_id: 81cd957
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: month
+        original-temporal-unit: quarter
+    - stage-number: 0
+  - card_id: -6yAP_G1UZ7xZc4E65Tvy
+    parameter_id: 9d9cddd4
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  - card_id: -6yAP_G1UZ7xZc4E65Tvy
+    parameter_id: efd919c7
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: month
+        original-temporal-unit: quarter
+    - stage-number: 0
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: UaPZl7PULaGoAGquao9XS
+  - model: DashboardCard
+    id: 3MGVK2PTcGxJwDXlDqjSE
+  card_id: -6yAP_G1UZ7xZc4E65Tvy
+  entity_id: 3MGVK2PTcGxJwDXlDqjSE
+  visualization_settings:
+    column_settings: null
+  size_y: 7
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 12
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - UaPZl7PULaGoAGquao9XS
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: UaPZl7PULaGoAGquao9XS
+  - model: DashboardCard
+    id: zsygIGYHdnaVsoFLgitCe
+  card_id: null
+  entity_id: zsygIGYHdnaVsoFLgitCe
+  visualization_settings:
+    dashcard.background: false
+    text: Deeper Dive
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: heading
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 10
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - UaPZl7PULaGoAGquao9XS
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings:
+  - card_id: km2d9-ZqHrlAM79yPh13G
+    parameter_id: 1ebab259
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - VENDOR
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  - card_id: km2d9-ZqHrlAM79yPh13G
+    parameter_id: 81cd957
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - stage-number: 0
+  - card_id: km2d9-ZqHrlAM79yPh13G
+    parameter_id: 9d9cddd4
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  - card_id: km2d9-ZqHrlAM79yPh13G
+    parameter_id: efd919c7
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: quarter
+    - stage-number: 0
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: UaPZl7PULaGoAGquao9XS
+  - model: DashboardCard
+    id: fRjV39ywXfG8mj6NFsXH4
+  card_id: km2d9-ZqHrlAM79yPh13G
+  entity_id: fRjV39ywXfG8mj6NFsXH4
+  visualization_settings:
+    column_settings: null
+  size_y: 8
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 26
+- size_x: 12
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - UaPZl7PULaGoAGquao9XS
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings:
+  - card_id: ShsD1PjGTlFIvzm5FM9qC
+    parameter_id: 1ebab259
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - VENDOR
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  - card_id: ShsD1PjGTlFIvzm5FM9qC
+    parameter_id: 81cd957
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - stage-number: 0
+  - card_id: ShsD1PjGTlFIvzm5FM9qC
+    parameter_id: 9d9cddd4
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: UaPZl7PULaGoAGquao9XS
+  - model: DashboardCard
+    id: -zrxIkj-jscf4OwBR435T
+  card_id: ShsD1PjGTlFIvzm5FM9qC
+  entity_id: -zrxIkj-jscf4OwBR435T
+  visualization_settings:
+    column_settings: null
+  size_y: 7
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 12
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - N-o1tJ9swdO4YJycqMA8P
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  - model: DashboardCard
+    id: wYtzbytCKhibM8Zg9s4VP
+  card_id: null
+  entity_id: wYtzbytCKhibM8Zg9s4VP
+  visualization_settings:
+    dashcard.background: false
+    text: Top Performing Products
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: heading
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 0
+- size_x: 12
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - N-o1tJ9swdO4YJycqMA8P
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  - model: DashboardCard
+    id: wuIanq5bdBiexA3yhyO0w
+  card_id: RpKYsFwHfjcckbgj4oBKK
+  entity_id: wuIanq5bdBiexA3yhyO0w
+  visualization_settings:
+    column_settings: null
+  size_y: 8
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 2
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - UaPZl7PULaGoAGquao9XS
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: UaPZl7PULaGoAGquao9XS
+  - model: DashboardCard
+    id: WD8BNj-NyWXaWuFghZNDU
+  card_id: null
+  entity_id: WD8BNj-NyWXaWuFghZNDU
+  visualization_settings:
+    dashcard.background: false
+    text: Business KPIs _look strong_ based on the consistent MoM revenue growth following the growth in the number of orders
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: text
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 1
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - N-o1tJ9swdO4YJycqMA8P
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings:
+  - parameter_id: 9d9cddd4
+    target:
+    - text-tag
+    - product_category
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  - model: DashboardCard
+    id: NZSFQPtNkT7fLZeeW9Oo0
+  card_id: null
+  entity_id: NZSFQPtNkT7fLZeeW9Oo0
+  visualization_settings:
+    dashcard.background: false
+    text: Find below a breakdown of products and their performance, filtered now for {{product_category}}
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: text
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 1
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - UaPZl7PULaGoAGquao9XS
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: UaPZl7PULaGoAGquao9XS
+  - model: DashboardCard
+    id: f-Hf9bL9_oArQCg-kLSdY
+  card_id: null
+  entity_id: f-Hf9bL9_oArQCg-kLSdY
+  visualization_settings:
+    dashcard.background: false
+    text: Widget and Gizmo are our leading products, generating the most revenue and orders
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: text
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 11
+- size_x: 12
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - N-o1tJ9swdO4YJycqMA8P
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 12
+  parameter_mappings:
+  - card_id: X8HNuB_i3j2uNFnsx3vQ0
+    parameter_id: 9d9cddd4
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  - model: DashboardCard
+    id: -IoAlBOQzsTLapLzSFQoE
+  card_id: X8HNuB_i3j2uNFnsx3vQ0
+  entity_id: -IoAlBOQzsTLapLzSFQoE
+  visualization_settings:
+    column_settings: null
+  size_y: 8
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 2
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - N-o1tJ9swdO4YJycqMA8P
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  - model: DashboardCard
+    id: YyZMLS7IGhXda6vmEfJ4I
+  card_id: null
+  entity_id: YyZMLS7IGhXda6vmEfJ4I
+  visualization_settings:
+    dashcard.background: false
+    text: Customer Satisfaction
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: heading
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 24
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - N-o1tJ9swdO4YJycqMA8P
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  - model: DashboardCard
+    id: MS4_Du2Fd3qkjpaRZFOqm
+  card_id: null
+  entity_id: MS4_Du2Fd3qkjpaRZFOqm
+  visualization_settings:
+    dashcard.background: false
+    text: Super important customer ratings for our products
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: text
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 25
+- size_x: 14
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - N-o1tJ9swdO4YJycqMA8P
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 10
+  parameter_mappings:
+  - card_id: OJ-I03ZsQ7IBrzr29B_8o
+    parameter_id: 9d9cddd4
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - stage-number: 0
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  - model: DashboardCard
+    id: WNCZfFyxCnhkAttN_rsIy
+  card_id: OJ-I03ZsQ7IBrzr29B_8o
+  entity_id: WNCZfFyxCnhkAttN_rsIy
+  visualization_settings:
+    column_settings: null
+  size_y: 7
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 26
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - dJjVk7QtJaNp6panPlnH5
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: dJjVk7QtJaNp6panPlnH5
+  - model: DashboardCard
+    id: K2tgkIzRB0_cSP8jrVZ6p
+  card_id: null
+  entity_id: K2tgkIzRB0_cSP8jrVZ6p
+  visualization_settings:
+    dashcard.background: false
+    text: Website Analysis
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: heading
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 0
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - dJjVk7QtJaNp6panPlnH5
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: dJjVk7QtJaNp6panPlnH5
+  - model: DashboardCard
+    id: DTpP8-129mKPp9oxsq_4R
+  card_id: null
+  entity_id: DTpP8-129mKPp9oxsq_4R
+  visualization_settings:
+    dashcard.background: false
+    text: Take a look into our customer funnel and website performance
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: text
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 1
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - N-o1tJ9swdO4YJycqMA8P
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  - model: DashboardCard
+    id: 19JbScZRjz5mSQ7chtjuY
+  card_id: Jxa0svP68DfXubV_wD3os
+  entity_id: 19JbScZRjz5mSQ7chtjuY
+  visualization_settings:
+    column_settings: null
+  size_y: 10
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 33
+- size_x: 14
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - dJjVk7QtJaNp6panPlnH5
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: dJjVk7QtJaNp6panPlnH5
+  - model: DashboardCard
+    id: fx-Zfyq1gaIcq2axhIRls
+  card_id: UUZZsw19IuPTqdhho99oc
+  entity_id: fx-Zfyq1gaIcq2axhIRls
+  visualization_settings:
+    column_settings: null
+  size_y: 7
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 9
+- size_x: 10
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - dJjVk7QtJaNp6panPlnH5
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 14
+  parameter_mappings:
+  - card_id: qQ3JGGOxVC8mrOLwxpcR6
+    parameter_id: 81cd957
+    target:
+    - dimension
+    - - field
+      - TIMESTAMP
+      - base-type: type/DateTime
+        inherited-temporal-unit: month
+    - stage-number: 1
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: dJjVk7QtJaNp6panPlnH5
+  - model: DashboardCard
+    id: wZV8zAS2XAMH_ub1DG58A
+  card_id: qQ3JGGOxVC8mrOLwxpcR6
+  entity_id: wZV8zAS2XAMH_ub1DG58A
+  visualization_settings:
+    column_settings: null
+  size_y: 7
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 9
+- size_x: 10
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - dJjVk7QtJaNp6panPlnH5
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 14
+  parameter_mappings:
+  - card_id: AXDOILGSNqoWoxV1NuvTt
+    parameter_id: 81cd957
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - stage-number: 0
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: dJjVk7QtJaNp6panPlnH5
+  - model: DashboardCard
+    id: R6UJhgRJd678v2nvAioH_
+  card_id: AXDOILGSNqoWoxV1NuvTt
+  entity_id: R6UJhgRJd678v2nvAioH_
+  visualization_settings:
+    column_settings: null
+  size_y: 6
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 16
+- size_x: 10
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - dJjVk7QtJaNp6panPlnH5
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 14
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: dJjVk7QtJaNp6panPlnH5
+  - model: DashboardCard
+    id: ZuOmZNE78gKe16jyqSRX4
+  card_id: null
+  entity_id: ZuOmZNE78gKe16jyqSRX4
+  visualization_settings:
+    link:
+      entity:
+        collection_id: 1788
+        db_id: null
+        description: More complete look at all recent subscriptions
+        display: table
+        id: ucI5e9_FdTQF-1i7RdtIX
+        model: card
+        name: All subscriptions in table view
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: link
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 22
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - dJjVk7QtJaNp6panPlnH5
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: dJjVk7QtJaNp6panPlnH5
+  - model: DashboardCard
+    id: x6_b5ifhvPkZKw3ZgFcPy
+  card_id: 9VE9Z6tAkyzO3GeQVXtin
+  entity_id: x6_b5ifhvPkZKw3ZgFcPy
+  visualization_settings:
+    column_settings: null
+  size_y: 7
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 2
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - dJjVk7QtJaNp6panPlnH5
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: dJjVk7QtJaNp6panPlnH5
+  - model: DashboardCard
+    id: sCNcFfp3EeaizKg0VtW4e
+  card_id: null
+  entity_id: sCNcFfp3EeaizKg0VtW4e
+  visualization_settings:
+    iframe: https://www.youtube.com/watch?v=dnT2Xj52mnk
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: iframe
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 10
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 25
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - dJjVk7QtJaNp6panPlnH5
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: dJjVk7QtJaNp6panPlnH5
+  - model: DashboardCard
+    id: OlrrrzZShIqvGE6RAjqbr
+  card_id: null
+  entity_id: OlrrrzZShIqvGE6RAjqbr
+  visualization_settings:
+    dashcard.background: false
+    text: |+
+      Find more guides and tutorials on Metabase, analytics, data modeling, and more at [Metabase Learn](https://www.metabase.com/learn/)
+
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: text
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 24
+- size_x: 24
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - dJjVk7QtJaNp6panPlnH5
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: dJjVk7QtJaNp6panPlnH5
+  - model: DashboardCard
+    id: Rq9NMjA_Y28ZDB-nwO8vI
+  card_id: null
+  entity_id: Rq9NMjA_Y28ZDB-nwO8vI
+  visualization_settings:
+    dashcard.background: false
+    text: Appendix
+    virtual_card:
+      archived: false
+      dataset_query: {}
+      display: heading
+      name: null
+      visualization_settings: {}
+    column_settings: null
+  size_y: 1
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 23
+- size_x: 14
+  dashboard_tab_id:
+  - xBLdW9FsgRuB2HGhWiBa_
+  - dJjVk7QtJaNp6panPlnH5
+  series: []
+  inline_parameters: null
+  action_id: null
+  col: 0
+  parameter_mappings:
+  - card_id: C8V7Dszig-vuqn9TP0igc
+    parameter_id: 81cd957
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ACCOUNTS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - stage-number: 1
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: dJjVk7QtJaNp6panPlnH5
+  - model: DashboardCard
+    id: VkOq2o1cbIeE2MYeP4mfx
+  card_id: C8V7Dszig-vuqn9TP0igc
+  entity_id: VkOq2o1cbIeE2MYeP4mfx
+  visualization_settings:
+    column_settings: null
+  size_y: 7
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+  row: 16
+initially_published_at: null
+tabs:
+- entity_id: UaPZl7PULaGoAGquao9XS
+  name: Overview
+  position: 0
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: UaPZl7PULaGoAGquao9XS
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+- entity_id: N-o1tJ9swdO4YJycqMA8P
+  name: Portfolio Performance
+  position: 1
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: N-o1tJ9swdO4YJycqMA8P
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+- entity_id: dJjVk7QtJaNp6panPlnH5
+  name: Website Analysis
+  position: 2
+  serdes/meta:
+  - model: Dashboard
+    id: xBLdW9FsgRuB2HGhWiBa_
+  - model: DashboardTab
+    id: dJjVk7QtJaNp6panPlnH5
+  created_at: '2025-04-09T18:49:25.331567+02:00'
+enable_embedding: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+show_in_getting_started: false
+name: E-commerce Insights
+width: fixed
+caveats: null
+creator_id: internal@metabase.com
+made_public_by_id: null
+embedding_params: null
+serdes/meta:
+- model: Dashboard
+  id: xBLdW9FsgRuB2HGhWiBa_
+  label: e_commerce_insights
+position: null
+archived_directly: false
+entity_id: xBLdW9FsgRuB2HGhWiBa_
+parameters:
+- id: 81cd957
+  name: Date Range
+  required: false
+  sectionId: date
+  slug: date_range
+  type: date/all-options
+- id: efd919c7
+  name: Date Grouping
+  sectionId: temporal-unit
+  slug: date_grouping
+  type: temporal-unit
+- default:
+  - Doohickey
+  - Gizmo
+  - Gadget
+  - Widget
+  id: 9d9cddd4
+  name: Product Category
+  required: true
+  sectionId: string
+  slug: product_category
+  type: string/=
+- id: 1ebab259
+  isMultiSelect: false
+  name: Vendor
+  sectionId: string
+  slug: vendor
+  type: string/=
+auto_apply_filters: true
+created_at: '2025-04-09T18:49:25.331567+02:00'
+public_uuid: null
+points_of_interest: null

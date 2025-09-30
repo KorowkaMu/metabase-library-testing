@@ -1,0 +1,180 @@
+description: Shows the distribution of the product categories along the scale of customer ratings
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+result_metadata:
+- description: The average rating users have given the product. This ranges from 1 - 5
+  semantic_type: type/Score
+  coercion_strategy: null
+  name: RATING
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PRODUCTS
+    - RATING
+  - base-type: type/Float
+    source-field:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    - PRODUCT_ID
+  effective_type: type/Float
+  id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  - RATING
+  visibility_type: normal
+  display_name: Product → Rating
+  base_type: type/Float
+- description: 'The type of product, valid values include: Doohicky, Gadget, Gizmo and Widget'
+  semantic_type: type/Category
+  coercion_strategy: null
+  name: CATEGORY
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PRODUCTS
+    - CATEGORY
+  - base-type: type/Text
+    source-field:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    - PRODUCT_ID
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  - CATEGORY
+  visibility_type: normal
+  display_name: Product → Category
+  base_type: type/Text
+- base_type: type/BigInteger
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+query_type: query
+name: Customer satisfaction per category
+document_id: null
+type: question
+creator_id: internal@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - count
+    breakout:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - RATING
+      - base-type: type/Float
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - CATEGORY
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    filter:
+    - '!='
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PRODUCTS
+        - TITLE
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - PRODUCT_ID
+    - Incredible Aluminum Knife
+    order-by:
+    - - desc
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PRODUCTS
+          - RATING
+        - base-type: type/Float
+          source-field:
+          - Sample Database
+          - PUBLIC
+          - ORDERS
+          - PRODUCT_ID
+          binning:
+            strategy: default
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+  type: query
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: OJ-I03ZsQ7IBrzr29B_8o
+  label: customer_satisfaction_per_category
+display: bar
+archived_directly: false
+entity_id: OJ-I03ZsQ7IBrzr29B_8o
+collection_preview: true
+visualization_settings:
+  graph.y_axis.title_text: ''
+  graph.show_values: true
+  graph.x_axis.title_text: ''
+  graph.metrics:
+  - count
+  graph.label_value_formatting: compact
+  column_settings: null
+  series_settings:
+    Doohickey:
+      color: '#7172AD'
+    Gadget:
+      color: '#999AC4'
+    Gizmo:
+      color: '#227FD2'
+    Widget:
+      color: '#C7EAEA'
+  graph.x_axis.scale: histogram
+  graph.dimensions:
+  - RATING
+  - CATEGORY
+  stackable.stack_type: stacked
+metabase_version: null
+parameters: []
+dashboard_id: null
+created_at: '2025-04-09T18:49:25.331567+02:00'
+public_uuid: null

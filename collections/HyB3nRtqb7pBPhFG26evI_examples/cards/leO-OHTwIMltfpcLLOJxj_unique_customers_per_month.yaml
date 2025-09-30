@@ -1,0 +1,88 @@
+description: Unique customer email addresses last quarter compared to the previous
+archived: false
+collection_position: null
+source_card_id: _GiVL6zYmsnBb1oqLCp4u
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+result_metadata:
+- description: The date and time an order was submitted.
+  semantic_type: type/CreationTimestamp
+  unit: quarter
+  name: CREATED_AT
+  settings:
+    time_enabled: milliseconds
+  field_ref:
+  - field
+  - CREATED_AT
+  - base-type: type/DateTime
+    temporal-unit: quarter
+  effective_type: type/DateTime
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - CREATED_AT
+  visibility_type: normal
+  display_name: 'Created At: Quarter'
+  base_type: type/DateTime
+- base_type: type/BigInteger
+  display_name: Distinct values of Customer Email
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+  settings:
+    link_text: ''
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+query_type: query
+name: Unique customers per month
+document_id: null
+type: question
+creator_id: internal@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - distinct
+      - - field
+        - EMAIL
+        - base-type: type/Text
+    breakout:
+    - - field
+      - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: quarter
+    filter:
+    - time-interval
+    - - field
+      - CREATED_AT
+      - base-type: type/DateTime
+    - -2
+    - quarter
+    source-table: _GiVL6zYmsnBb1oqLCp4u
+  type: query
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: leO-OHTwIMltfpcLLOJxj
+  label: unique_customers_per_month
+display: smartscalar
+archived_directly: false
+entity_id: leO-OHTwIMltfpcLLOJxj
+collection_preview: true
+visualization_settings:
+  column_settings: null
+metabase_version: null
+parameters: []
+dashboard_id: null
+created_at: '2025-04-09T18:49:25.331567+02:00'
+public_uuid: null

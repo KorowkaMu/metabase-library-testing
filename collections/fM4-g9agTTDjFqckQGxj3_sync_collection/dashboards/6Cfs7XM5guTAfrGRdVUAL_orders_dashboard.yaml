@@ -1,0 +1,118 @@
+description: null
+archived: false
+collection_position: null
+dashcards:
+- size_x: 24
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 0
+  parameter_mappings:
+  - parameter_id: bbcd5eba
+    card_id: iMjUIvbFgrkG43mmxn19l
+    target:
+    - dimension
+    - - field
+      - CREATED_AT
+      - base-type: type/DateTime
+        inherited-temporal-unit: month
+    - stage-number: 1
+  serdes/meta:
+  - model: Dashboard
+    id: 6Cfs7XM5guTAfrGRdVUAL
+  - model: DashboardCard
+    id: PDbcckx-yUFMnzeHnVP_y
+  card_id: iMjUIvbFgrkG43mmxn19l
+  entity_id: PDbcckx-yUFMnzeHnVP_y
+  visualization_settings:
+    column_settings: null
+  size_y: 11
+  created_at: '2025-09-24T16:47:17.912954Z'
+  row: 0
+- size_x: 24
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 0
+  parameter_mappings:
+  - parameter_id: bbcd5eba
+    card_id: Uet1VAFMRFicZc3DxSZMM
+    target:
+    - dimension
+    - - field
+      - CREATED_AT
+      - base-type: type/DateTime
+        inherited-temporal-unit: month
+    - stage-number: 1
+  serdes/meta:
+  - model: Dashboard
+    id: 6Cfs7XM5guTAfrGRdVUAL
+  - model: DashboardCard
+    id: hbWExRyNIPJKh8WelOWqy
+  card_id: Uet1VAFMRFicZc3DxSZMM
+  entity_id: hbWExRyNIPJKh8WelOWqy
+  visualization_settings:
+    column_settings: null
+  size_y: 8
+  created_at: '2025-09-25T08:50:57.206801Z'
+  row: 11
+- size_x: 24
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 0
+  parameter_mappings:
+  - parameter_id: bbcd5eba
+    card_id: hPQxeAWR2e55HCjsTgwVP
+    target:
+    - dimension
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - stage-number: 0
+  serdes/meta:
+  - model: Dashboard
+    id: 6Cfs7XM5guTAfrGRdVUAL
+  - model: DashboardCard
+    id: VhmwuNYDFimJwBrn8Nwaz
+  card_id: hPQxeAWR2e55HCjsTgwVP
+  entity_id: VhmwuNYDFimJwBrn8Nwaz
+  visualization_settings:
+    column_settings: null
+  size_y: 31
+  created_at: '2025-09-25T08:54:52.466398Z'
+  row: 19
+initially_published_at: null
+tabs: []
+enable_embedding: false
+collection_id: fM4-g9agTTDjFqckQGxj3
+show_in_getting_started: false
+name: Orders dashboard
+width: fixed
+caveats: null
+creator_id: kvoropayeva@gmail.com
+made_public_by_id: null
+embedding_params: null
+serdes/meta:
+- model: Dashboard
+  id: 6Cfs7XM5guTAfrGRdVUAL
+  label: orders_dashboard
+position: null
+archived_directly: false
+entity_id: 6Cfs7XM5guTAfrGRdVUAL
+parameters:
+- name: Date
+  slug: date
+  id: bbcd5eba
+  type: date/all-options
+  sectionId: date
+auto_apply_filters: true
+created_at: '2025-09-24T16:36:01.464871Z'
+public_uuid: null
+points_of_interest: null

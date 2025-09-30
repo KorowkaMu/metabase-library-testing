@@ -1,0 +1,171 @@
+description: null
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+result_metadata:
+- description: The date and time an order was submitted.
+  database_type: TIMESTAMP
+  semantic_type: type/CreationTimestamp
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  qp/implicit-field?: true
+  lib/deduplicated-name: CREATED_AT
+  lib/original-name: CREATED_AT
+  lib/breakout?: false
+  unit: month
+  name: CREATED_AT
+  lib/source: source/previous-stage
+  lib/source-column-alias: CREATED_AT
+  lib/original-display-name: Created At
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - CREATED_AT
+  - null
+  effective_type: type/DateTime
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - CREATED_AT
+  lib/desired-column-alias: CREATED_AT
+  position: 7
+  visibility_type: normal
+  inherited_temporal_unit: month
+  display_name: 'Created At: Month'
+  base_type: type/DateTime
+- database_type: DECFLOAT
+  semantic_type: null
+  qp/implicit-field?: true
+  lib/deduplicated-name: sum
+  lib/original-name: sum
+  lib/breakout?: false
+  name: sum
+  lib/source: source/previous-stage
+  lib/source-column-alias: sum
+  source: fields
+  field_ref:
+  - field
+  - sum
+  - base-type: type/Float
+  effective_type: type/Float
+  lib/desired-column-alias: sum
+  display_name: Sum of Total
+  base_type: type/Float
+- database_type: DECFLOAT
+  semantic_type: null
+  qp/implicit-field?: true
+  lib/deduplicated-name: 'Previous year '
+  lib/original-name: 'Previous year '
+  lib/breakout?: false
+  name: 'Previous year '
+  lib/source: source/previous-stage
+  lib/source-column-alias: 'Previous year '
+  source: fields
+  field_ref:
+  - field
+  - 'Previous year '
+  - base-type: type/Float
+  effective_type: type/Float
+  lib/desired-column-alias: 'Previous year '
+  display_name: 'Previous year '
+  base_type: type/Float
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: null
+query_type: query
+name: Compare orders with prev period
+document_id: null
+type: question
+creator_id: kvoropayeva@gmail.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  type: query
+  query:
+    aggregation:
+    - - sum
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ORDERS
+          - TOTAL
+        - base-type: type/Float
+    - - offset
+      - lib/uuid: 03c85508-3c20-4acf-8df4-818ff38a288a
+        display-name: 'Previous year '
+        name: 'Previous year '
+      - - sum
+        - - field
+          - - Sample Database
+            - PUBLIC
+            - ORDERS
+            - TOTAL
+          - base-type: type/Float
+      - -12
+    breakout:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: month
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    filter:
+    - and
+    - - time-interval
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ORDERS
+          - CREATED_AT
+        - base-type: type/DateTime
+      - -24
+      - month
+      - include-current: true
+    - - =
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ORDERS
+          - PRODUCT_ID
+        - base-type: type/Integer
+      - 2
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: Uet1VAFMRFicZc3DxSZMM
+  label: compare_orders_with_prev_period
+display: bar
+archived_directly: false
+entity_id: Uet1VAFMRFicZc3DxSZMM
+collection_preview: true
+visualization_settings:
+  graph.x_axis.scale: timeseries
+  graph.dimensions:
+  - CREATED_AT
+  graph.metrics:
+  - sum
+  - 'Previous year '
+  column_settings: null
+metabase_version: vLOCAL_DEV (06d1ba2ae111e66253209c01c244d6379acfc6dcb1911fa9ab6012cec9ce52e5)
+parameters: []
+dashboard_id: null
+created_at: '2025-09-25T08:47:02.488175Z'
+public_uuid: null

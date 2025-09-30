@@ -1,0 +1,67 @@
+description: null
+archived: false
+collection_position: null
+source_card_id: null
+table_id: null
+result_metadata:
+- database_type: CHARACTER
+  semantic_type: null
+  lib/deduplicated-name: EAN
+  lib/original-name: EAN
+  name: EAN
+  lib/source: source/native
+  source: native
+  field_ref:
+  - field
+  - EAN
+  - base-type: type/Text
+  effective_type: type/Text
+  display_name: EAN
+  base_type: type/Text
+- database_type: TIMESTAMP
+  semantic_type: type/CreationTimestamp
+  lib/deduplicated-name: CREATED_AT
+  lib/original-name: CREATED_AT
+  name: CREATED_AT
+  lib/source: source/native
+  source: native
+  field_ref:
+  - field
+  - CREATED_AT
+  - base-type: type/DateTime
+  effective_type: type/DateTime
+  display_name: CREATED_AT
+  base_type: type/DateTime
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: null
+query_type: native
+name: sandboxing question
+document_id: null
+type: question
+creator_id: kvoropayeva@gmail.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  type: native
+  native:
+    template-tags: {}
+    query: select EAN, CREATED_AT from products;
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: wCkasm1ULS96_zSVx3WWC
+  label: sandboxing_question
+display: table
+archived_directly: false
+entity_id: wCkasm1ULS96_zSVx3WWC
+collection_preview: true
+visualization_settings:
+  column_settings: null
+metabase_version: vLOCAL_DEV (06d1ba2ae111e66253209c01c244d6379acfc6dcb1911fa9ab6012cec9ce52e5)
+parameters: []
+dashboard_id: null
+created_at: '2025-09-23T14:42:39.785977Z'
+public_uuid: null

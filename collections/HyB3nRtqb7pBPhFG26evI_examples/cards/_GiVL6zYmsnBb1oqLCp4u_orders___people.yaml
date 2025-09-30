@@ -1,0 +1,385 @@
+description: Sample orders joined with products
+archived: false
+collection_position: 1
+source_card_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+result_metadata:
+- description: This is a unique ID for the product. It is also called the “Invoice number” or “Confirmation number” in customer facing emails and screens.
+  semantic_type: type/PK
+  coercion_strategy: null
+  name: ID
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - ID
+  - null
+  effective_type: type/BigInteger
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - ID
+  visibility_type: normal
+  display_name: ID
+  base_type: type/BigInteger
+- description: The id of the user who made this order. Note that in some cases where an order was created on behalf of a customer who phoned the order in, this might be the employee who handled the request.
+  semantic_type: type/FK
+  coercion_strategy: null
+  name: USER_ID
+  settings: null
+  fk_target_field_id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - ID
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - USER_ID
+  - null
+  effective_type: type/Integer
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - USER_ID
+  visibility_type: normal
+  display_name: User ID
+  base_type: type/Integer
+- description: The product ID. This is an internal identifier for the product, NOT the SKU.
+  semantic_type: type/FK
+  coercion_strategy: null
+  name: PRODUCT_ID
+  settings: null
+  fk_target_field_id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  - ID
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - PRODUCT_ID
+  - null
+  effective_type: type/Integer
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - PRODUCT_ID
+  visibility_type: normal
+  display_name: Product ID
+  base_type: type/Integer
+- description: The raw, pre-tax cost of the order. Note that this might be different in the future from the product price due to promotions, credits, etc.
+  semantic_type: type/Currency
+  coercion_strategy: null
+  name: SUBTOTAL
+  settings:
+    view_as: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - SUBTOTAL
+  - null
+  effective_type: type/Float
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - SUBTOTAL
+  visibility_type: normal
+  display_name: Subtotal
+  base_type: type/Float
+- description: This is the amount of local and federal taxes that are collected on the purchase. Note that other governmental fees on some products are not included here, but instead are accounted for in the subtotal.
+  semantic_type: type/Currency
+  coercion_strategy: null
+  name: TAX
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - TAX
+  - null
+  effective_type: type/Float
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - TAX
+  visibility_type: normal
+  display_name: Tax
+  base_type: type/Float
+- description: The total billed amount.
+  semantic_type: type/Currency
+  coercion_strategy: null
+  name: TOTAL
+  settings:
+    currency: USD
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - TOTAL
+  - null
+  effective_type: type/Float
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - TOTAL
+  visibility_type: normal
+  display_name: Total
+  base_type: type/Float
+- description: Discount amount.
+  semantic_type: type/Discount
+  coercion_strategy: null
+  name: DISCOUNT
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - DISCOUNT
+  - null
+  effective_type: type/Float
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - DISCOUNT
+  visibility_type: normal
+  display_name: Discount
+  base_type: type/Float
+- description: The date and time an order was submitted.
+  semantic_type: type/CreationTimestamp
+  coercion_strategy: null
+  name: CREATED_AT
+  settings:
+    time_enabled: milliseconds
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - CREATED_AT
+  - null
+  effective_type: type/DateTime
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - CREATED_AT
+  visibility_type: normal
+  display_name: Created At
+  base_type: type/DateTime
+- description: Number of products bought.
+  semantic_type: type/Quantity
+  coercion_strategy: null
+  name: QUANTITY
+  settings:
+    show_mini_bar: false
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - QUANTITY
+  - null
+  effective_type: type/Integer
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - QUANTITY
+  visibility_type: normal
+  display_name: Quantity
+  base_type: type/Integer
+- base_type: type/BigInteger
+  description: Age of the customer in years.
+  display_name: Age
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - Age
+  - base-type: type/BigInteger
+  name: Age
+  semantic_type: type/Quantity
+- description: The contact email for the account.
+  semantic_type: type/Email
+  coercion_strategy: null
+  name: EMAIL
+  settings:
+    link_text: ''
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - EMAIL
+  - base-type: type/Text
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - EMAIL
+  visibility_type: normal
+  display_name: Customer Email
+  base_type: type/Text
+- description: The state or province of the account’s billing address.
+  semantic_type: type/State
+  coercion_strategy: null
+  name: STATE
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - STATE
+  - base-type: type/Text
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - STATE
+  visibility_type: normal
+  display_name: State
+  base_type: type/Text
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+query_type: query
+name: Orders + People
+document_id: null
+type: model
+creator_id: internal@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  query:
+    expressions:
+      Age:
+      - datetime-diff
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PEOPLE
+          - BIRTH_DATE
+        - base-type: type/Date
+          join-alias: People - User
+      - - now
+      - year
+    joins:
+    - alias: People - User
+      condition:
+      - =
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ORDERS
+          - USER_ID
+        - base-type: type/Integer
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PEOPLE
+          - ID
+        - base-type: type/BigInteger
+          join-alias: People - User
+      fields:
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PEOPLE
+          - EMAIL
+        - base-type: type/Text
+          join-alias: People - User
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PEOPLE
+          - STATE
+        - base-type: type/Text
+          join-alias: People - User
+      source-table:
+      - Sample Database
+      - PUBLIC
+      - PEOPLE
+      strategy: left-join
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+  type: query
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: _GiVL6zYmsnBb1oqLCp4u
+  label: orders___people
+display: table
+archived_directly: false
+entity_id: _GiVL6zYmsnBb1oqLCp4u
+collection_preview: true
+visualization_settings:
+  table.cell_column: SUBTOTAL
+  table.columns:
+  - enabled: true
+    name: ID
+  - enabled: true
+    name: USER_ID
+  - enabled: true
+    name: PRODUCT_ID
+  - enabled: true
+    name: SUBTOTAL
+  - enabled: true
+    name: TAX
+  - enabled: true
+    name: TOTAL
+  - enabled: true
+    name: DISCOUNT
+  - enabled: true
+    name: CREATED_AT
+  - enabled: true
+    name: QUANTITY
+  - enabled: true
+    name: EMAIL
+  - enabled: true
+    name: Age
+  - enabled: true
+    name: STATE
+  table.pivot_column: SOURCE
+  column_settings: null
+metabase_version: null
+parameters: []
+dashboard_id: null
+created_at: '2025-04-09T18:49:25.331567+02:00'
+public_uuid: null

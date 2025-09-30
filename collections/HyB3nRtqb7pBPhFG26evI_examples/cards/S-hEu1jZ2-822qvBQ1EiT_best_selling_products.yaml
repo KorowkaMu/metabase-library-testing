@@ -1,0 +1,202 @@
+description: An ordered list of our most successful products
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+result_metadata:
+- description: The name of the product as it should be displayed to customers.
+  database_type: CHARACTER VARYING
+  semantic_type: type/Title
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  lib/deduplicated-name: TITLE
+  lib/original-name: TITLE
+  name: TITLE
+  lib/source: source/joins
+  lib/source-column-alias: TITLE
+  lib/original-display-name: Title
+  source: fields
+  fk_field_id: 14
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PRODUCTS
+    - TITLE
+  - base-type: type/Text
+    source-field:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    - PRODUCT_ID
+  effective_type: type/Text
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  - TITLE
+  lib/desired-column-alias: PRODUCTS__via__PRODUCT_ID__TITLE
+  position: 2
+  visibility_type: normal
+  display_name: Product → Title
+  base_type: type/Text
+- description: 'The type of product, valid values include: Doohicky, Gadget, Gizmo and Widget'
+  database_type: CHARACTER VARYING
+  semantic_type: type/Category
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  lib/deduplicated-name: CATEGORY
+  lib/original-name: CATEGORY
+  name: CATEGORY
+  lib/source: source/joins
+  lib/source-column-alias: CATEGORY
+  lib/original-display-name: Category
+  source: fields
+  fk_field_id: 14
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PRODUCTS
+    - CATEGORY
+  - base-type: type/Text
+    source-field:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    - PRODUCT_ID
+  effective_type: type/Text
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - PRODUCTS
+  - CATEGORY
+  lib/desired-column-alias: PRODUCTS__via__PRODUCT_ID__CATEGORY
+  position: 3
+  visibility_type: normal
+  display_name: Product → Category
+  base_type: type/Text
+- database_type: BIGINT
+  semantic_type: type/Quantity
+  lib/deduplicated-name: count
+  lib/original-name: count
+  lib/breakout?: false
+  name: count
+  lib/source: source/previous-stage
+  lib/source-column-alias: count
+  source: fields
+  field_ref:
+  - field
+  - count
+  - base-type: type/Integer
+  effective_type: type/BigInteger
+  lib/desired-column-alias: count
+  display_name: Count
+  base_type: type/BigInteger
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+query_type: query
+name: Best selling products
+document_id: null
+type: question
+creator_id: internal@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  query:
+    filter:
+    - '>='
+    - - field
+      - count
+      - base-type: type/Integer
+    - 110
+    source-query:
+      order-by:
+      - - desc
+        - - aggregation
+          - 0
+      aggregation:
+      - - count
+      breakout:
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PRODUCTS
+          - TITLE
+        - base-type: type/Text
+          source-field:
+          - Sample Database
+          - PUBLIC
+          - ORDERS
+          - PRODUCT_ID
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PRODUCTS
+          - CATEGORY
+        - base-type: type/Text
+          source-field:
+          - Sample Database
+          - PUBLIC
+          - ORDERS
+          - PRODUCT_ID
+      filter:
+      - '!='
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PRODUCTS
+          - TITLE
+        - base-type: type/Text
+          source-field:
+          - Sample Database
+          - PUBLIC
+          - ORDERS
+          - PRODUCT_ID
+      - Incredible Aluminum Knife
+      source-table:
+      - Sample Database
+      - PUBLIC
+      - ORDERS
+  type: query
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: S-hEu1jZ2-822qvBQ1EiT
+  label: best_selling_products
+display: row
+archived_directly: false
+entity_id: S-hEu1jZ2-822qvBQ1EiT
+collection_preview: true
+visualization_settings:
+  graph.y_axis.title_text: ''
+  graph.show_values: true
+  graph.series_order_dimension: null
+  graph.x_axis.title_text: ''
+  graph.metrics:
+  - count
+  graph.series_order: null
+  column_settings: null
+  series_settings:
+    count:
+      color: '#999AC4'
+  graph.dimensions:
+  - TITLE
+  stackable.stack_type: null
+metabase_version: null
+parameters: []
+dashboard_id: null
+created_at: '2025-04-09T18:49:25.331567+02:00'
+public_uuid: null

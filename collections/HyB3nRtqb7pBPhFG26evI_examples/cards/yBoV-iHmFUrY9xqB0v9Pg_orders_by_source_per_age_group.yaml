@@ -1,0 +1,139 @@
+description: Shows a distribution of orders broken down by source across our customers' age groups
+archived: false
+collection_position: null
+source_card_id: _GiVL6zYmsnBb1oqLCp4u
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+result_metadata:
+- base_type: type/Decimal
+  description: Age of the customer in years.
+  display_name: Age
+  effective_type: type/Decimal
+  field_ref:
+  - field
+  - Age
+  - base-type: type/BigInteger
+    binning:
+      strategy: num-bins
+      num-bins: 10
+      min-value: 20
+      max-value: 70
+      bin-width: 5
+  name: Age
+  semantic_type: type/Quantity
+- description: 'The channel through which we acquired this user. Valid values include: Affiliate, Facebook, Google, Organic and Twitter'
+  semantic_type: type/Source
+  coercion_strategy: null
+  name: SOURCE
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - SOURCE
+  - base-type: type/Text
+    source-field:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+    - USER_ID
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - SOURCE
+  visibility_type: normal
+  display_name: User → Source
+  base_type: type/Text
+- base_type: type/BigInteger
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+query_type: query
+name: Orders by source per age group
+document_id: null
+type: question
+creator_id: internal@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - count
+    breakout:
+    - - field
+      - Age
+      - base-type: type/BigInteger
+        binning:
+          strategy: num-bins
+          num-bins: 10
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - PEOPLE
+        - SOURCE
+      - base-type: type/Text
+        source-field:
+        - Sample Database
+        - PUBLIC
+        - ORDERS
+        - USER_ID
+    joins:
+    - alias: Products
+      condition:
+      - =
+      - - field
+        - PRODUCT_ID
+        - base-type: type/Integer
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PRODUCTS
+          - ID
+        - base-type: type/BigInteger
+          join-alias: Products
+      source-table:
+      - Sample Database
+      - PUBLIC
+      - PRODUCTS
+      strategy: left-join
+    source-table: _GiVL6zYmsnBb1oqLCp4u
+  type: query
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: yBoV-iHmFUrY9xqB0v9Pg
+  label: orders_by_source_per_age_group
+display: bar
+archived_directly: false
+entity_id: yBoV-iHmFUrY9xqB0v9Pg
+collection_preview: true
+visualization_settings:
+  graph.dimensions:
+  - Age
+  - SOURCE
+  graph.show_values: true
+  graph.x_axis.scale: linear
+  stackable.stack_type: stacked
+  graph.metrics:
+  - count
+  column_settings: null
+metabase_version: null
+parameters: []
+dashboard_id: null
+created_at: '2025-04-09T18:49:25.331567+02:00'
+public_uuid: null

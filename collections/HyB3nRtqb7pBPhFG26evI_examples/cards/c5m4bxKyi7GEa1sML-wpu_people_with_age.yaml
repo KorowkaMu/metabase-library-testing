@@ -1,0 +1,329 @@
+description: null
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- PEOPLE
+result_metadata:
+- description: A unique identifier given to each user.
+  semantic_type: type/PK
+  coercion_strategy: null
+  name: ID
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - ID
+  - null
+  effective_type: type/BigInteger
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - ID
+  visibility_type: normal
+  display_name: ID
+  base_type: type/BigInteger
+- description: The street address of the account’s billing address
+  semantic_type: null
+  coercion_strategy: null
+  name: ADDRESS
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - ADDRESS
+  - null
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - ADDRESS
+  visibility_type: normal
+  display_name: Address
+  base_type: type/Text
+- description: The contact email for the account.
+  semantic_type: type/Email
+  coercion_strategy: null
+  name: EMAIL
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - EMAIL
+  - null
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - EMAIL
+  visibility_type: normal
+  display_name: Email
+  base_type: type/Text
+- description: The name of the user who owns an account
+  semantic_type: type/Name
+  coercion_strategy: null
+  name: NAME
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - NAME
+  - null
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - NAME
+  visibility_type: normal
+  display_name: Name
+  base_type: type/Text
+- description: The city of the account’s billing address
+  semantic_type: type/City
+  coercion_strategy: null
+  name: CITY
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - CITY
+  - null
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - CITY
+  visibility_type: normal
+  display_name: City
+  base_type: type/Text
+- description: This is the longitude of the user on sign-up. It might be updated in the future to the last seen location.
+  semantic_type: type/Longitude
+  coercion_strategy: null
+  name: LONGITUDE
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - LONGITUDE
+  - null
+  effective_type: type/Float
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - LONGITUDE
+  visibility_type: normal
+  display_name: Longitude
+  base_type: type/Float
+- description: The state or province of the account’s billing address
+  semantic_type: type/State
+  coercion_strategy: null
+  name: STATE
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - STATE
+  - null
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - STATE
+  visibility_type: normal
+  display_name: State
+  base_type: type/Text
+- description: 'The channel through which we acquired this user. Valid values include: Affiliate, Facebook, Google, Organic and Twitter'
+  semantic_type: type/Source
+  coercion_strategy: null
+  name: SOURCE
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - SOURCE
+  - null
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - SOURCE
+  visibility_type: normal
+  display_name: Source
+  base_type: type/Text
+- description: The date of birth of the user
+  semantic_type: type/Birthdate
+  coercion_strategy: null
+  name: BIRTH_DATE
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - BIRTH_DATE
+  - null
+  effective_type: type/Date
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - BIRTH_DATE
+  visibility_type: normal
+  display_name: Birth Date
+  base_type: type/Date
+- description: The postal code of the account’s billing address
+  semantic_type: type/ZipCode
+  coercion_strategy: null
+  name: ZIP
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - ZIP
+  - null
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - ZIP
+  visibility_type: normal
+  display_name: Zip
+  base_type: type/Text
+- description: This is the latitude of the user on sign-up. It might be updated in the future to the last seen location.
+  semantic_type: type/Latitude
+  coercion_strategy: null
+  name: LATITUDE
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - LATITUDE
+  - null
+  effective_type: type/Float
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - LATITUDE
+  visibility_type: normal
+  display_name: Latitude
+  base_type: type/Float
+- description: The date the user record was created. Also referred to as the user’s "join date"
+  semantic_type: type/CreationTimestamp
+  coercion_strategy: null
+  name: CREATED_AT
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - PEOPLE
+    - CREATED_AT
+  - null
+  effective_type: type/DateTime
+  id:
+  - Sample Database
+  - PUBLIC
+  - PEOPLE
+  - CREATED_AT
+  visibility_type: normal
+  display_name: Created At
+  base_type: type/DateTime
+- base_type: type/BigInteger
+  display_name: Age
+  effective_type: type/BigInteger
+  field_ref:
+  - expression
+  - Age
+  name: Age
+  semantic_type: null
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+query_type: query
+name: People with age
+document_id: null
+type: question
+creator_id: internal@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  query:
+    expressions:
+      Age:
+      - datetime-diff
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - PEOPLE
+          - BIRTH_DATE
+        - base-type: type/Date
+      - - now
+      - year
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - PEOPLE
+  type: query
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: c5m4bxKyi7GEa1sML-wpu
+  label: people_with_age
+display: table
+archived_directly: false
+entity_id: c5m4bxKyi7GEa1sML-wpu
+collection_preview: true
+visualization_settings:
+  table.cell_column: LONGITUDE
+  table.pivot_column: SOURCE
+  column_settings: null
+metabase_version: null
+parameters: []
+dashboard_id: null
+created_at: '2025-04-09T18:49:25.331567+02:00'
+public_uuid: null

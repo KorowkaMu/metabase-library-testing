@@ -1,0 +1,18 @@
+authority_level: null
+description: Some examples to get started with
+archived: false
+slug: examples
+archive_operation_id: null
+name: Examples
+personal_owner_id: null
+type: null
+is_sample: true
+parent_id: null
+serdes/meta:
+- model: Collection
+  id: HyB3nRtqb7pBPhFG26evI
+  label: examples
+archived_directly: null
+entity_id: HyB3nRtqb7pBPhFG26evI
+namespace: null
+created_at: '2025-04-09T18:49:25.331567+02:00'

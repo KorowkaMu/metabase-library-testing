@@ -1,0 +1,102 @@
+description: Canonical metric for number of orders placed
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- ORDERS
+result_metadata:
+- description: The date and time an order was submitted.
+  semantic_type: type/CreationTimestamp
+  coercion_strategy: null
+  unit: month
+  name: CREATED_AT
+  settings:
+    time_enabled: milliseconds
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ORDERS
+    - CREATED_AT
+  - base-type: type/DateTime
+    temporal-unit: month
+  effective_type: type/DateTime
+  id:
+  - Sample Database
+  - PUBLIC
+  - ORDERS
+  - CREATED_AT
+  visibility_type: normal
+  display_name: 'Created At: Month'
+  base_type: type/DateTime
+- base_type: type/BigInteger
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - aggregation
+  - 0
+  name: count
+  semantic_type: type/Quantity
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+query_type: query
+name: Number of Orders
+document_id: null
+type: metric
+creator_id: internal@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  query:
+    aggregation:
+    - - count
+    breakout:
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+        temporal-unit: month
+    filter:
+    - time-interval
+    - - field
+      - - Sample Database
+        - PUBLIC
+        - ORDERS
+        - CREATED_AT
+      - base-type: type/DateTime
+    - -3
+    - year
+    - include-current: true
+    source-table:
+    - Sample Database
+    - PUBLIC
+    - ORDERS
+  type: query
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: 8EdazRgPwfxdiltp7NCjS
+  label: number_of_orders
+display: line
+archived_directly: false
+entity_id: 8EdazRgPwfxdiltp7NCjS
+collection_preview: true
+visualization_settings:
+  graph.dimensions:
+  - CREATED_AT
+  graph.metrics:
+  - count
+  column_settings: null
+metabase_version: null
+parameters: []
+dashboard_id: null
+created_at: '2025-04-09T18:49:25.331567+02:00'
+public_uuid: null

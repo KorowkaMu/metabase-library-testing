@@ -1,0 +1,107 @@
+description: Flow from viewing our website (empty) to checkout and subscribe
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- ANALYTIC_EVENTS
+result_metadata:
+- description: null
+  semantic_type: type/Category
+  coercion_strategy: null
+  name: BUTTON_LABEL
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ANALYTIC_EVENTS
+    - BUTTON_LABEL
+  - base-type: type/Text
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  - BUTTON_LABEL
+  visibility_type: normal
+  display_name: Button Label
+  base_type: type/Text
+- base_type: type/BigInteger
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - count
+  - base-type: type/Integer
+  name: count
+  semantic_type: type/Quantity
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+query_type: query
+name: Checkout funnel
+document_id: null
+type: question
+creator_id: internal@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  query:
+    filter:
+    - not-empty
+    - - field
+      - BUTTON_LABEL
+      - base-type: type/Text
+    source-query:
+      breakout:
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ANALYTIC_EVENTS
+          - BUTTON_LABEL
+        - base-type: type/Text
+      aggregation:
+      - - count
+      source-table:
+      - Sample Database
+      - PUBLIC
+      - ANALYTIC_EVENTS
+  type: query
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: UUZZsw19IuPTqdhho99oc
+  label: checkout_funnel
+display: funnel
+archived_directly: false
+entity_id: UUZZsw19IuPTqdhho99oc
+collection_preview: true
+visualization_settings:
+  funnel.order_dimension: BUTTON_LABEL
+  funnel.rows:
+  - enabled: true
+    key: Create Item
+    name: Create Item
+  - enabled: true
+    key: Invite
+    name: Invite
+  - enabled: true
+    key: Subscribe
+    name: Subscribe
+  - enabled: true
+    key: Signup
+    name: Signup
+  - enabled: true
+    key: Checkout
+    name: Checkout
+  column_settings: null
+metabase_version: null
+parameters: []
+dashboard_id: null
+created_at: '2025-04-09T18:49:25.331567+02:00'
+public_uuid: null

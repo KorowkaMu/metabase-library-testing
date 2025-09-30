@@ -1,0 +1,18 @@
+authority_level: official
+description: null
+archived: false
+slug: sync_collection
+archive_operation_id: null
+name: Sync collection
+personal_owner_id: null
+type: null
+is_sample: false
+parent_id: null
+serdes/meta:
+- model: Collection
+  id: fM4-g9agTTDjFqckQGxj3
+  label: sync_collection
+archived_directly: null
+entity_id: fM4-g9agTTDjFqckQGxj3
+namespace: null
+created_at: '2025-09-30T15:40:09.554676Z'

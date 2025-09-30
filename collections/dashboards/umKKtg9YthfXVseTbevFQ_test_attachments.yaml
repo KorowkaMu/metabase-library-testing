@@ -1,0 +1,179 @@
+description: null
+archived: false
+collection_position: null
+dashcards:
+- size_x: 12
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: umKKtg9YthfXVseTbevFQ
+  - model: DashboardCard
+    id: c6DLK7G7HuMlVXrvA_XFy
+  card_id: ucI5e9_FdTQF-1i7RdtIX
+  entity_id: c6DLK7G7HuMlVXrvA_XFy
+  visualization_settings:
+    column_settings: null
+  size_y: 9
+  created_at: '2025-07-28T18:12:09.666831Z'
+  row: 0
+- size_x: 12
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 12
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: umKKtg9YthfXVseTbevFQ
+  - model: DashboardCard
+    id: 0jXddnFkqE8B9DrWD9MKe
+  card_id: S-hEu1jZ2-822qvBQ1EiT
+  entity_id: 0jXddnFkqE8B9DrWD9MKe
+  visualization_settings:
+    column_settings: null
+  size_y: 6
+  created_at: '2025-07-28T18:12:09.666831Z'
+  row: 0
+- size_x: 12
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 12
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: umKKtg9YthfXVseTbevFQ
+  - model: DashboardCard
+    id: nY1HxWR0qXYq43mncb63M
+  card_id: dzFHc6awtpZCSn9-wscNQ
+  entity_id: nY1HxWR0qXYq43mncb63M
+  visualization_settings:
+    column_settings: null
+  size_y: 6
+  created_at: '2025-07-28T18:12:09.666831Z'
+  row: 6
+- size_x: 12
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 0
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: umKKtg9YthfXVseTbevFQ
+  - model: DashboardCard
+    id: deC_izo0NgL0oPJ_O_EGO
+  card_id: Jxa0svP68DfXubV_wD3os
+  entity_id: deC_izo0NgL0oPJ_O_EGO
+  visualization_settings:
+    column_settings: null
+  size_y: 9
+  created_at: '2025-07-28T18:12:09.666831Z'
+  row: 9
+- size_x: 6
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 12
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: umKKtg9YthfXVseTbevFQ
+  - model: DashboardCard
+    id: xAOg86UzWjhhEmcur41yh
+  card_id: IEp2LZKY_aJMpchBacdjP
+  entity_id: xAOg86UzWjhhEmcur41yh
+  visualization_settings:
+    column_settings: null
+  size_y: 3
+  created_at: '2025-07-28T18:12:09.666831Z'
+  row: 12
+- size_x: 6
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 18
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: umKKtg9YthfXVseTbevFQ
+  - model: DashboardCard
+    id: 523Gn0XLh2U1RQ6KTSfca
+  card_id: HSVx57QxslVTGbo1_XS4G
+  entity_id: 523Gn0XLh2U1RQ6KTSfca
+  visualization_settings:
+    column_settings: null
+  size_y: 3
+  created_at: '2025-07-28T18:12:09.666831Z'
+  row: 12
+- size_x: 6
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 12
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: umKKtg9YthfXVseTbevFQ
+  - model: DashboardCard
+    id: lYmDVUIHE4zzabEc9wfm-
+  card_id: fdkSuB8zWEbjEq_vWMaI-
+  entity_id: lYmDVUIHE4zzabEc9wfm-
+  visualization_settings:
+    column_settings: null
+  size_y: 3
+  created_at: '2025-07-28T18:12:09.666831Z'
+  row: 15
+- size_x: 6
+  dashboard_tab_id: null
+  series: []
+  inline_parameters: []
+  action_id: null
+  col: 18
+  parameter_mappings: []
+  serdes/meta:
+  - model: Dashboard
+    id: umKKtg9YthfXVseTbevFQ
+  - model: DashboardCard
+    id: S6mrtix6bp2VUlA3SH2cy
+  card_id: A5pNCrrWtf2bVka2vXVLx
+  entity_id: S6mrtix6bp2VUlA3SH2cy
+  visualization_settings:
+    column_settings: null
+  size_y: 3
+  created_at: '2025-07-28T18:12:09.666831Z'
+  row: 15
+initially_published_at: null
+tabs: []
+enable_embedding: false
+collection_id: null
+show_in_getting_started: false
+name: Test attachments
+width: fixed
+caveats: null
+creator_id: kvoropayeva@gmail.com
+made_public_by_id: null
+embedding_params: null
+serdes/meta:
+- model: Dashboard
+  id: umKKtg9YthfXVseTbevFQ
+  label: test_attachments
+position: null
+archived_directly: false
+entity_id: umKKtg9YthfXVseTbevFQ
+parameters: []
+auto_apply_filters: true
+created_at: '2025-07-28T18:11:47.61275Z'
+public_uuid: null
+points_of_interest: null

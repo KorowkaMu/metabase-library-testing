@@ -1,0 +1,144 @@
+description: Sankey flow from visiting our website to taking an action
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- ANALYTIC_EVENTS
+result_metadata:
+- description: null
+  semantic_type: type/Category
+  coercion_strategy: null
+  name: BUTTON_LABEL
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ANALYTIC_EVENTS
+    - BUTTON_LABEL
+  - base-type: type/Text
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  - BUTTON_LABEL
+  visibility_type: normal
+  display_name: Button Label
+  base_type: type/Text
+- description: null
+  semantic_type: type/Category
+  coercion_strategy: null
+  name: EVENT
+  settings: null
+  fk_target_field_id: null
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ANALYTIC_EVENTS
+    - EVENT
+  - base-type: type/Text
+  effective_type: type/Text
+  id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  - EVENT
+  visibility_type: normal
+  display_name: Event
+  base_type: type/Text
+- base_type: type/BigInteger
+  display_name: Count
+  effective_type: type/BigInteger
+  field_ref:
+  - field
+  - count
+  - base-type: type/Integer
+  name: count
+  semantic_type: type/Quantity
+- base_type: type/Text
+  display_name: Step
+  effective_type: type/Text
+  field_ref:
+  - expression
+  - Step
+  name: Step
+  semantic_type: null
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+query_type: query
+name: User flow diagram
+document_id: null
+type: question
+creator_id: internal@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  query:
+    expressions:
+      Step:
+      - case
+      - - - - is-null
+            - - field
+              - BUTTON_LABEL
+              - base-type: type/Text
+          - Bounced
+      - default:
+        - field
+        - BUTTON_LABEL
+        - base-type: type/Text
+    filter:
+    - '!='
+    - - expression
+      - Step
+      - base-type: type/Text
+    - Bounced
+    source-query:
+      breakout:
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ANALYTIC_EVENTS
+          - BUTTON_LABEL
+        - base-type: type/Text
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ANALYTIC_EVENTS
+          - EVENT
+        - base-type: type/Text
+      aggregation:
+      - - count
+      source-table:
+      - Sample Database
+      - PUBLIC
+      - ANALYTIC_EVENTS
+  type: query
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: 9VE9Z6tAkyzO3GeQVXtin
+  label: user_flow_diagram
+display: sankey
+archived_directly: false
+entity_id: 9VE9Z6tAkyzO3GeQVXtin
+collection_preview: true
+visualization_settings:
+  sankey.edge_color: source
+  sankey.node_align: right
+  sankey.show_edge_labels: true
+  sankey.source: EVENT
+  sankey.target: Step
+  column_settings: null
+metabase_version: null
+parameters: []
+dashboard_id: null
+created_at: '2025-04-09T18:49:25.331567+02:00'
+public_uuid: null

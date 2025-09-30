@@ -1,0 +1,126 @@
+description: Flow from viewing our website (empty) to checkout and subscribe
+archived: false
+collection_position: null
+source_card_id: null
+table_id:
+- Sample Database
+- PUBLIC
+- ANALYTIC_EVENTS
+result_metadata:
+- database_type: CHARACTER VARYING
+  semantic_type: type/Category
+  table_id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  lib/deduplicated-name: BUTTON_LABEL
+  lib/original-name: BUTTON_LABEL
+  lib/breakout?: false
+  name: BUTTON_LABEL
+  lib/source: source/previous-stage
+  lib/source-column-alias: BUTTON_LABEL
+  lib/original-display-name: Button Label
+  source: fields
+  field_ref:
+  - field
+  - - Sample Database
+    - PUBLIC
+    - ANALYTIC_EVENTS
+    - BUTTON_LABEL
+  - base-type: type/Text
+  effective_type: type/Text
+  active: true
+  id:
+  - Sample Database
+  - PUBLIC
+  - ANALYTIC_EVENTS
+  - BUTTON_LABEL
+  lib/desired-column-alias: BUTTON_LABEL
+  position: 5
+  visibility_type: normal
+  display_name: Button Label
+  base_type: type/Text
+- database_type: BIGINT
+  semantic_type: type/Quantity
+  lib/deduplicated-name: count
+  lib/original-name: count
+  lib/breakout?: false
+  name: count
+  lib/source: source/previous-stage
+  lib/source-column-alias: count
+  source: fields
+  field_ref:
+  - field
+  - count
+  - base-type: type/Integer
+  effective_type: type/BigInteger
+  lib/desired-column-alias: count
+  display_name: Count
+  base_type: type/BigInteger
+card_schema: 22
+database_id: Sample Database
+enable_embedding: false
+collection_id: HyB3nRtqb7pBPhFG26evI
+query_type: query
+name: Checkout funnel - Modified
+document_id: null
+type: question
+creator_id: internal@metabase.com
+made_public_by_id: null
+embedding_params: null
+dataset_query:
+  database: Sample Database
+  query:
+    filter:
+    - not-empty
+    - - field
+      - BUTTON_LABEL
+      - base-type: type/Text
+    source-query:
+      breakout:
+      - - field
+        - - Sample Database
+          - PUBLIC
+          - ANALYTIC_EVENTS
+          - BUTTON_LABEL
+        - base-type: type/Text
+      aggregation:
+      - - count
+      source-table:
+      - Sample Database
+      - PUBLIC
+      - ANALYTIC_EVENTS
+  type: query
+parameter_mappings: []
+serdes/meta:
+- model: Card
+  id: dzFHc6awtpZCSn9-wscNQ
+  label: checkout_funnel___modified
+display: funnel
+archived_directly: false
+entity_id: dzFHc6awtpZCSn9-wscNQ
+collection_preview: true
+visualization_settings:
+  funnel.order_dimension: BUTTON_LABEL
+  funnel.rows:
+  - enabled: true
+    key: Create Item
+    name: Create Item
+  - enabled: true
+    key: Invite
+    name: Invite
+  - enabled: true
+    key: Subscribe
+    name: Subscribe
+  - enabled: true
+    key: Signup
+    name: Signup
+  - enabled: true
+    key: Checkout
+    name: Checkout
+  column_settings: null
+metabase_version: null
+parameters: []
+dashboard_id: null
+created_at: '2025-04-09T18:49:25.331567+02:00'
+public_uuid: null
