@@ -224,6 +224,27 @@ dataset_query:
     - month
     - include-current: true
     source-query:
+      aggregation:
+      - - sum
+        - - field
+          - - Sample Database
+            - PUBLIC
+            - ORDERS
+            - TOTAL
+          - base-type: type/Float
+      - - offset
+        - display-name: Prev month sales
+          lib/uuid: c9e81c9f-94d9-452e-8919-d5b08d14caca
+          name: Prev month sales
+          effective-type: type/Float
+        - - sum
+          - - field
+            - - Sample Database
+              - PUBLIC
+              - ORDERS
+              - TOTAL
+            - base-type: type/Float
+        - 12
       breakout:
       - - field
         - - Sample Database
@@ -253,27 +274,6 @@ dataset_query:
       - Sample Database
       - PUBLIC
       - ORDERS
-      aggregation:
-      - - sum
-        - - field
-          - - Sample Database
-            - PUBLIC
-            - ORDERS
-            - TOTAL
-          - base-type: type/Float
-      - - offset
-        - lib/uuid: c9e81c9f-94d9-452e-8919-d5b08d14caca
-          name: Prev month sales
-          display-name: Prev month sales
-          effective-type: type/Float
-        - - sum
-          - - field
-            - - Sample Database
-              - PUBLIC
-              - ORDERS
-              - TOTAL
-            - base-type: type/Float
-        - 12
       filter:
       - and
       - - =
